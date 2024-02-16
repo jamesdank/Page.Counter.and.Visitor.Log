@@ -29,7 +29,6 @@
     }
 
     $fp = fopen($ip_log, 'a+');
-    
     fwrite($fp, '['.$timestamp.']: '.$ip_address.' '.$browser.' ('.$page. " page)  \n");
     fclose($fp);
 ?>
